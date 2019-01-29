@@ -16,6 +16,18 @@ body,
     margin: .66rem 0;
 }
 
+.content-box h2 {
+    font-size: .48rem;
+    text-align: center;
+    margin: .56rem 0;
+}
+
+.content-box h3 {
+    font-size: .38rem;
+    text-align: center;
+    margin: .56rem 0;
+}
+
 .content-box .container {
     width: 960px;
     margin: 0 auto;
