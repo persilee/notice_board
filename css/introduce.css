@@ -1,0 +1,16 @@
+html,
+body,
+.wrapper {
+    height: auto;
+}
+
+.wrapper,
+.banner-box,
+.banner {
+    height: 580px;
+}
+
+.introduce h1 {
+    font-size: .58rem;
+    text-align: center;
+}

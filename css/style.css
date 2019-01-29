@@ -1,0 +1,95 @@
+html {
+    font-size: 77.6562px;
+}
+
+.wrapper {
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 0.8rem;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+}
+
+.menu .nav {
+    height: 0.8rem;
+    font-size: 0.32rem;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0000000f;
+}
+
+.menu .nav>li {
+    margin-bottom: 0.01rem;
+    float: left;
+    width: 1.8rem;
+    text-align: center;
+    padding-left: 0.04rem;
+    list-style: none;
+    border: 1px solid #ffffff29
+}
+
+.menu .nav li a {
+    line-height: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    display: block;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #424242;
+}
+
+.menu .nav>li.active {
+    background-color: #33333336;
+}
+
+.menu .nav>li.active a {
+    color: #fff;
+}
+
+.menu .nav li:hover {
+    background-color: #33333336;
+}
+
+.menu .nav li:hover>a {
+    width: 90%;
+    color: #fff;
+    transform: translateX(0px);
+    transition: all .5s ease 0s;
+}
+
+.menu .nav li>ul {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    z-index: 999;
+    margin-left: -0.03rem;
+}
+
+.menu .nav li:hover>ul {
+    display: block;
+}
+
+.menu .nav li>ul>li {
+    float: left;
+    list-style: none;
+    margin: 2px;
+}
+
+.menu .nav li>ul>li>a {
+    width: 90%;
+    line-height: 0.35rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    border-top: none;
+    padding: 2px 4px;
+    font-size: 0.16rem;
+}
