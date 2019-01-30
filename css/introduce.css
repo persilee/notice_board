@@ -34,6 +34,10 @@ body,
     padding-bottom: 1rem;
 }
 
+.content-box .container.large {
+    width: 1440px;
+}
+
 .content-box .container p {
     font-size: .32rem;
     line-height: .48rem;
