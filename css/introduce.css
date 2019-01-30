@@ -69,3 +69,7 @@ body,
 .menu .nav>li>ul>li.active {
     background-color: #33333336;
 }
+
+.menu .nav li>ul.left {
+    left: 6%;
+}
