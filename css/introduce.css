@@ -77,3 +77,7 @@ body,
 .menu .nav li>ul.left {
     left: 14%;
 }
+
+.content-box .container .other-box {
+    text-align: center;
+}
