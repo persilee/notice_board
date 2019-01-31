@@ -5,6 +5,9 @@
 
     var index = 0,
         timer = null,
+        left = 0,
+        main = byId('banner-box'),
+        aLiWidth = main.offsetWidth,
         pics = byId('banner').getElementsByTagName('div'),
         dots = byId('dots').getElementsByTagName('span'),
         prev = byId('prev'),
@@ -12,7 +15,7 @@
         len = pics.length;
 
     function slideImg() {
-        var main = byId('banner-box');
+
         main.onmouseover = function () {
             //清除定时器
             if (timer) clearInterval(timer);
@@ -63,4 +66,33 @@
         dots[index].className = 'active';
     }
     slideImg();
+
+    // 初始化手指坐标点
+    var startPoint = 0;
+    var startEle = 0;
+    //手指按下
+    main.addEventListener("touchstart", function (e) {
+        startPoint = e.changedTouches[0].pageX;
+        startEle = main.offsetLeft;
+    });
+    //手指滑动
+    main.addEventListener("touchmove", function (e) {
+        var currPoint = e.changedTouches[0].pageX;
+        var disX = currPoint - startPoint;
+        left = startEle + disX;
+    });
+    //当手指抬起的时候，判断图片滚动离左右的距离，当
+    main.addEventListener("touchend", function (e) {
+        console.log(left)
+        if (left < -6) {
+            index--;
+            if (index < 0) index = len - 1;
+            changeImg();
+        }
+        if (left > 6) {
+            index++;
+            if (index >= len) index = 0;
+            changeImg();
+        }
+    })
 })();

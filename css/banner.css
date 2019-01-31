@@ -70,6 +70,8 @@ body,
     position: absolute;
     bottom: 0;
     right: 48%;
+    font-size: 36px;
+    margin-bottom: 16px;
 }
 
 .dots span {

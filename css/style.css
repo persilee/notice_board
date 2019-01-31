@@ -1,17 +1,14 @@
-html {
-    font-size: 77.6562px;
-}
-
-.wrapper {}
-
 .menu {
     display: flex;
     justify-content: center;
     height: 0.8rem;
     width: 100%;
-    position: absolute;
-    top: 0px;
+    position: fixed;
+    bottom: 0px;
     z-index: 99;
+    background-color: #12ae3f;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
 }
 
 .menu .nav {
@@ -19,7 +16,6 @@ html {
     font-size: 0.32rem;
     margin: 0px;
     padding: 0px;
-    background-color: #0000000f;
 }
 
 .menu .nav>li {
@@ -62,6 +58,7 @@ html {
 .menu .nav li>ul {
     display: none;
     position: absolute;
+    bottom: .8rem;
     margin-top: 0px;
     z-index: 999;
     margin-left: -12px;
@@ -69,7 +66,9 @@ html {
 
 .menu .nav li:hover>ul {
     display: block;
-    background-color: #0000000f;
+    background-color: #12ae3f;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
     margin-left: -16px;
     padding: 0;
 }
