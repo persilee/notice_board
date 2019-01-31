@@ -81,3 +81,17 @@ body,
 .content-box .container .other-box {
     text-align: center;
 }
+
+.content-box .container .content table {
+    font-size: .32rem;
+    width: 100%;
+    text-align: center;
+}
+
+.content-box .container .content table th{
+    height: .78rem;
+}
+
+.content-box .container .content table td {
+    height: .66rem;
+}
