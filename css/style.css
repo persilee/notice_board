@@ -90,3 +90,7 @@ html {
     padding: 2px 12px;
     font-size: 0.28rem;
 }
+
+.menu .nav li>ul.left {
+    left: 14%;
+}
