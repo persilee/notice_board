@@ -7,8 +7,8 @@
     bottom: 0px;
     z-index: 99;
     background-color: #12ae3f;
-    filter: alpha(opacity=85);
-    opacity: 0.85;
+    /* filter: alpha(opacity=85);
+    opacity: 0.85; */
 }
 
 .menu .nav {
@@ -67,8 +67,8 @@
 .menu .nav li:hover>ul {
     display: block;
     background-color: #12ae3f;
-    filter: alpha(opacity=95);
-    opacity: 0.95;
+    /* filter: alpha(opacity=95);
+    opacity: 0.95; */
     margin-left: -16px;
     padding: 0;
 }
